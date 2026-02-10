@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Marlou Mupas - Projects</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563eb",
+                        "primary-dark": "#1d4ed8",
+                        "background-light": "#ffffff",
+                        "background-alt": "#F8FAFC",
+                        "background-dark": "#111521",
+                        "text-main": "#0f172a",
+                        "text-muted": "#64748b",
+                        "border-light": "#e2e8f0",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"],
+                        "primary": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased selection:bg-primary selection:text-white flex flex-col min-h-screen">
+    <div class="relative flex flex-col w-full overflow-x-hidden flex-1">
+        <div id="header-placeholder"></div>
+        <script src="js/header.js?v=1.0"></script>
+        <script src="js/main.js?v=1.0"></script>
+
+        <main class="flex-1 pt-16 pb-20">
+            <!-- Hero Section -->
+            <section
+                class="bg-background-alt pt-20 pb-16 dark:bg-gray-900 border-b border-border-light dark:border-gray-800">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                    <h1
+                        class="text-4xl font-extrabold tracking-tight text-text-main sm:text-5xl lg:text-6xl mb-6 dark:text-white">
+                        Portfolio
+                    </h1>
+                    <p class="mt-4 text-xl text-text-muted dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                        A curated collection of websites and digital solutions I've built over the years.
+                    </p>
+
+                    <!-- Filter Buttons -->
+                    <div class="mt-12 flex flex-wrap justify-center gap-3">
+                        <button
+                            class="px-6 py-2 rounded-full border border-primary bg-primary text-white text-sm font-semibold shadow-sm hover:bg-primary-dark transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">All</button>
+                        <button
+                            class="px-6 py-2 rounded-full border border-border-light bg-white text-text-muted text-sm font-semibold shadow-sm hover:border-primary hover:text-primary transition-colors dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">WordPress</button>
+                        <button
+                            class="px-6 py-2 rounded-full border border-border-light bg-white text-text-muted text-sm font-semibold shadow-sm hover:border-primary hover:text-primary transition-colors dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Ecommerce</button>
+                        <button
+                            class="px-6 py-2 rounded-full border border-border-light bg-white text-text-muted text-sm font-semibold shadow-sm hover:border-primary hover:text-primary transition-colors dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">SaaS</button>
+                        <button
+                            class="px-6 py-2 rounded-full border border-border-light bg-white text-text-muted text-sm font-semibold shadow-sm hover:border-primary hover:text-primary transition-colors dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Custom
+                            Development</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Grid -->
+            <section class="py-16 bg-background-light dark:bg-background-dark">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 row-gap-12">
+                        <!-- Project 1: alxemy.co.nz -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJkYaDpS1CTGEd0e3lI9pcIw2cVL_-B2jWkTWXT15Znq4VddrZNdb5ZYSgJ5TIk2ek8xATqK-NM2mhm58budiWZVKoECdqqCjiy6AAy0CAnPFBmkTPcOB1lPIA3ISSHEzVmewF_g61O6eUgiM-uC4tQjbJcs0HIjf5Ia2Dt_Z5P1s2NMsyo694hb_JIZfrSxSPoJn5PkhnD9Jh6C2DBez_dV3_vTjIJpwmVl2CrXNO77zwwV4Qv__LTV9glrp_fr7e5ncCzV0qLzc"
+                                    alt="alxemy.co.nz dashboard"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    alxemy.co.nz</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Next.js</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Tailwind
+                                        CSS</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">SaaS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: deals4you.co.nz -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjcsDo_tcVdnTCbAhiI1h11nl1a6lLLj12gtaa_5qHnsbKeACH90ZLvw0LwR5mI6guc8DyUAMD6BjC3fD7GSELZZgOxtsbFq-7GJmYXCx-vDVJJIBwmzaxH4JcVlGBTV8FGvAA8gTG_FzCPWI2sc_IOR9qBVlTMHVV3W2EwGusxKAdTEJJyM8SRMkA7PDLCNrhRKCPeRnokJfcmzk_wEMWxpjqqPubA5hlcPci5j5Cr4fwqr51eN8-G0osrnsL6sOlPVZFmKB0Zwo"
+                                    alt="deals4you.co.nz website"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    deals4you.co.nz</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">WordPress</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Affiliate</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Custom
+                                        Theme</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: acedoors.co.nz -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDODBwFVEL-yfeKS530dVU4USbO5UKgLqDTWZQ8QvnbHpvIvV5vsk-vQ2QgkyrHFX9TYMboZsw35xAl_7CA4i394VvhsZbWbZ2s4YC509sEa5AifSBWibRhuMcQyxF8J02JtlIt4CErg2uq-UsbL_g6I22ajzZwLEff9hJ8HEv8UQWxxp1i9cbgw4Qbk8rncW6jn1Y3b007PEKtjJG86ud7uaT1vlyxUy1amaK1i29GsrpOAcTc1rAq3e85mLYhx1bUTyejv7XNkxs"
+                                    alt="acedoors.co.nz website"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    acedoors.co.nz</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Corporate</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">WooCommerce</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: collectively.consulting -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3KsGlh6pz2Mfw_fx3lBJByw5j9-fNcL2jRbvJ80Lt6qT6tx322T--aAHpmbKJBwFcK5ZAW-Q2HTwCuKEGn8XgMjyfKqzVBywQFJoVT095NITw0Kwn6QNHWTIn4mbvV8NmZLJ1gpp4Ec3atFyutN31Pk7J4giC7fEtA46-tnU6e7jOudi6hl19YHUoliI-TEAqiE1DebnsiLpQLI-wtxEHnfkU3NMc6hW77mAvo5xU6U_QRy4iCJNDNRu0l3wddIvm5KqFoTD_Cvs"
+                                    alt="collectively.consulting website"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    collectively.consulting</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Consulting</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Minimalist</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5: insurance4you.co.nz -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqTqgkS0yCVVl-0mI2zz3XucBdKcu0K7rzUfShjLWJ-Zm7bmqQFL1aT5Vjxijom1Q7YctxgxTwnqCehm279WgWWj8U07hUyVy-EFLKONAATW3FZPwoJ15n3nwm9crq9g4LRalomxRNdURrPAPe9rqoS4T-wX0UMExzoMR9zWduQNw1qIuO76IILdwfiMiFAuG0MS2M5me7At5P9Ke2tWS9DzZ3uhLtPvYlXqNcU6aJDYJoqoxWX9d8dZls141b3WEBhRtVA5GIcd8"
+                                    alt="insurance4you.co.nz website"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    insurance4you.co.nz</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Finance</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Lead
+                                        Generation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 6: novii.co.nz -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlBhI_haV9w9MwMIsQgElxqtdQkIryC6z9FiAaXJJqC5vd2x-Mc_chQ_gri4JAR-Woqj6M-qB6oPx1ReNOS3qXsoHgp5tEmlPmrmMqN_ZLnaGe15dYAO3oFpHTus9xGp9xd1OeMip-65b5S8kDBQQ-wcQrFoHs09X7LYrw0x0Pj9RvUbnGncRt67jRfYw1Elz5fd6LVHT5vdta2wjcj-aL6FXc-FHySkOKmz7DIqf4oaPmyZGoAXwNOa5miJ1JIOMYsGg2dce41es"
+                                    alt="novii.co.nz website"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    novii.co.nz</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Shopify</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Healthcare</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 7: compare4you.co.nz -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJkYaDpS1CTGEd0e3lI9pcIw2cVL_-B2jWkTWXT15Znq4VddrZNdb5ZYSgJ5TIk2ek8xATqK-NM2mhm58budiWZVKoECdqqCjiy6AAy0CAnPFBmkTPcOB1lPIA3ISSHEzVmewF_g61O6eUgiM-uC4tQjbJcs0HIjf5Ia2Dt_Z5P1s2NMsyo694hb_JIZfrSxSPoJn5PkhnD9Jh6C2DBez_dV3_vTjIJpwmVl2CrXNO77zwwV4Qv__LTV9glrp_fr7e5ncCzV0qLzc"
+                                    alt="compare4you.co.nz dashboard"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    compare4you.co.nz</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Comparison</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">React</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 8: developed.co.nz -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjcsDo_tcVdnTCbAhiI1h11nl1a6lLLj12gtaa_5qHnsbKeACH90ZLvw0LwR5mI6guc8DyUAMD6BjC3fD7GSELZZgOxtsbFq-7GJmYXCx-vDVJJIBwmzaxH4JcVlGBTV8FGvAA8gTG_FzCPWI2sc_IOR9qBVlTMHVV3W2EwGusxKAdTEJJyM8SRMkA7PDLCNrhRKCPeRnokJfcmzk_wEMWxpjqqPubA5hlcPci5j5Cr4fwqr51eN8-G0osrnsL6sOlPVZFmKB0Zwo"
+                                    alt="developed.co.nz website"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    developed.co.nz</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Real
+                                        Estate</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Custom
+                                        Map</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 9: jacobi.co.nz -->
+                        <div class="group block space-y-4">
+                            <div
+                                class="overflow-hidden rounded-2xl bg-gray-100 border border-border-light relative aspect-video shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDODBwFVEL-yfeKS530dVU4USbO5UKgLqDTWZQ8QvnbHpvIvV5vsk-vQ2QgkyrHFX9TYMboZsw35xAl_7CA4i394VvhsZbWbZ2s4YC509sEa5AifSBWibRhuMcQyxF8J02JtlIt4CErg2uq-UsbL_g6I22ajzZwLEff9hJ8HEv8UQWxxp1i9cbgw4Qbk8rncW6jn1Y3b007PEKtjJG86ud7uaT1vlyxUy1amaK1i29GsrpOAcTc1rAq3e85mLYhx1bUTyejv7XNkxs"
+                                    alt="jacobi.co.nz website"
+                                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            </div>
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-text-main group-hover:text-primary transition-colors dark:text-white mb-2">
+                                    jacobi.co.nz</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Portfolio</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-400">Minimal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="py-20 bg-background-alt dark:bg-gray-900 border-t border-border-light dark:border-gray-800">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl mb-4 dark:text-white">Have a
+                        project in mind?</h2>
+                    <p class="text-lg text-text-muted dark:text-gray-400 max-w-2xl mx-auto mb-10">
+                        I'm currently available for new projects. Let's discuss how we can work together to achieve your
+                        goals.
+                    </p>
+                    <a href="#contact"
+                        class="inline-flex items-center justify-center rounded-xl bg-primary px-8 py-3 text-base font-bold text-white shadow-sm transition-all hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                        Get in Touch
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-background-light pt-8 pb-8 border-t border-border-light dark:bg-gray-900 dark:border-gray-800"
+            id="contact">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 dark:border-gray-800">
+                    <p class="text-sm text-text-muted dark:text-gray-500">
+                        © 2024 Marlou Mupas. All rights reserved.
+                    </p>
+                    <div class="flex gap-6">
+                        <a class="text-sm text-text-muted hover:text-primary dark:text-gray-500" href="#">Privacy
+                            Policy</a>
+                        <a class="text-sm text-text-muted hover:text-primary dark:text-gray-500" href="#">Terms of
+                            Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>

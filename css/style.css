@@ -1,0 +1,12 @@
+/* ============================================
+   Portfolio - Custom Styles
+   Version: 1.0
+   ============================================ */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
