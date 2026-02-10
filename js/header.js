@@ -1,6 +1,6 @@
 /* ============================================
    Portfolio - Global Header Component
-   Version: 1.0
+   Version: 1.2
    
    Edit this file to update the header across
    all pages. The script auto-detects the 
@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const path = window.location.pathname;
     const isHome = path.endsWith('/') || path.endsWith('/index.html') || path.endsWith('index.html');
 
-    // Build link prefixes: on index use anchors directly, on subpages prefix with index.html
-    const prefix = isHome ? '' : 'index.html';
+    // Build link prefixes: on index use anchors directly, on subpages prefix with base path
+    const prefix = isHome ? '' : '/';
 
     const headerHTML = `
         <header class="fixed top-0 left-0 right-0 z-50 w-full border-b border-border-light bg-background-light/80 backdrop-blur-md dark:border-gray-800 dark:bg-background-dark/80">
             <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center gap-2">
-                    <a href="index.html" class="flex items-center gap-2 group">
+                    <a href="/" class="flex items-center gap-2 group">
                         <div class="flex size-8 items-center justify-center rounded-lg bg-primary text-white group-hover:bg-primary-dark transition-colors">
                             <span class="material-symbols-outlined text-[20px]">code</span>
                         </div>
