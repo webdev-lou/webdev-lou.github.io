@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a class="text-sm font-medium text-text-muted hover:text-primary transition-colors dark:text-gray-400 dark:hover:text-primary"
                     href="${prefix}#services">Services</a>
                 <a class="text-sm font-medium text-text-muted hover:text-primary transition-colors dark:text-gray-400 dark:hover:text-primary"
-                    href="projects.html">Projects</a>
+                    href="/projects">Projects</a>
                 <a class="text-sm font-medium text-text-muted hover:text-primary transition-colors dark:text-gray-400 dark:hover:text-primary"
                     href="${prefix}#philosophy">Philosophy</a>
                 <a class="text-sm font-medium text-text-muted hover:text-primary transition-colors dark:text-gray-400 dark:hover:text-primary"
