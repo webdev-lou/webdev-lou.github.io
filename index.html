@@ -567,21 +567,22 @@
                             </div>
                         </div>
                         <div class="bg-white rounded-2xl shadow-lg p-8 dark:bg-gray-800">
-                            <form action="#" class="space-y-6">
+                            <form action="contact.php" method="POST" id="contact-form" class="space-y-6">
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     <div>
                                         <label class="block text-sm font-semibold text-text-main mb-2 dark:text-white"
                                             for="name">Name</label>
                                         <input
                                             class="block w-full rounded-lg border-border-light bg-background-alt p-3 text-text-main focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                                            id="name" placeholder="John Doe" type="text" />
+                                            id="name" name="name" placeholder="John Doe" type="text" required />
                                     </div>
                                     <div>
                                         <label class="block text-sm font-semibold text-text-main mb-2 dark:text-white"
                                             for="email">Email</label>
                                         <input
                                             class="block w-full rounded-lg border-border-light bg-background-alt p-3 text-text-main focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                                            id="email" placeholder="john@example.com" type="email" />
+                                            id="email" name="email" placeholder="john@example.com" type="email"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -590,14 +591,14 @@
                                             for="phone">Phone (Optional)</label>
                                         <input
                                             class="block w-full rounded-lg border-border-light bg-background-alt p-3 text-text-main focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                                            id="phone" placeholder="+64 ..." type="tel" />
+                                            id="phone" name="phone" placeholder="+64 ..." type="tel" />
                                     </div>
                                     <div>
                                         <label class="block text-sm font-semibold text-text-main mb-2 dark:text-white"
                                             for="website">Website (Optional)</label>
                                         <input
                                             class="block w-full rounded-lg border-border-light bg-background-alt p-3 text-text-main focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                                            id="website" placeholder="https://" type="url" />
+                                            id="website" name="website" placeholder="https://" type="url" />
                                     </div>
                                 </div>
                                 <div>
@@ -605,13 +606,15 @@
                                         for="message">Message</label>
                                     <textarea
                                         class="block w-full rounded-lg border-border-light bg-background-alt p-3 text-text-main focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                                        id="message" placeholder="How can I help you?" rows="4"></textarea>
+                                        id="message" name="message" rows="4" placeholder="How can I help you?"
+                                        required></textarea>
                                 </div>
                                 <button
-                                    class="w-full rounded-xl bg-primary px-8 py-3 text-base font-bold text-white shadow-sm transition-all hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                                    type="submit">
+                                    class="w-full rounded-xl bg-primary px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-primary-dark hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    type="submit" id="submit-btn">
                                     Send Message
                                 </button>
+                                <div id="form-message" class="text-center text-sm font-medium hidden"></div>
                             </form>
                         </div>
                     </div>
