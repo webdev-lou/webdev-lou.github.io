@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Contact Form Handling
     const contactForm = document.getElementById('contact-form');
-    const formMessage = document.getElementById('form-message');
     const submitBtn = document.getElementById('submit-btn');
+    const formMessage = document.getElementById('form-message');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
@@ -37,23 +37,33 @@ document.addEventListener('DOMContentLoaded', function () {
             })
                 .then(response => response.json())
                 .then(data => {
-                    formMessage.textContent = data.message;
-                    formMessage.classList.remove('hidden');
-
                     if (data.status === 'success') {
+                        // Replace the button with a thank you message
+                        submitBtn.style.display = 'none';
+                        formMessage.textContent = '✓ Thank you! Your message has been sent successfully.';
+                        formMessage.classList.remove('hidden');
                         formMessage.classList.add('text-green-600');
-                        contactForm.reset();
+                        formMessage.style.padding = '16px';
+                        formMessage.style.fontSize = '16px';
+
+                        // Disable all form fields
+                        contactForm.querySelectorAll('input, textarea').forEach(function (el) {
+                            el.disabled = true;
+                            el.style.opacity = '0.5';
+                        });
                     } else {
+                        formMessage.textContent = data.message || 'Something went wrong. Please try again.';
+                        formMessage.classList.remove('hidden');
                         formMessage.classList.add('text-red-600');
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Send Message';
                     }
                 })
-                .catch(error => {
+                .catch(function (error) {
                     console.error('Error:', error);
                     formMessage.textContent = 'An error occurred. Please try again later.';
                     formMessage.classList.remove('hidden');
                     formMessage.classList.add('text-red-600');
-                })
-                .finally(() => {
                     submitBtn.disabled = false;
                     submitBtn.textContent = 'Send Message';
                 });

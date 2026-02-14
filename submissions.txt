@@ -7,3 +7,30 @@ Website:
 Message:
 This is a test
 ---------------------------------
+Time: 2026-02-14 20:27:21
+Name: Test User
+Email: test@example.com
+Phone: 
+Website: 
+
+Message:
+Hello, this is a test message.
+---------------------------------
+Time: 2026-02-14 20:31:36
+Name: Louei Mups
+Email: marlou.mupas@gmail.com
+Phone: 09771448582
+Website: https://webdev-lou.com/projects/
+
+Message:
+This is a test
+---------------------------------
+Time: 2026-02-14 20:33:28
+Name: Louei Mups
+Email: marlou.mupas@gmail.com
+Phone: 09771448582
+Website: https://webdev-lou.com/projects/
+
+Message:
+This is a test
+---------------------------------

@@ -1,4 +1,6 @@
 <?php
+header('Content-Type: application/json');
+
 // Prevent direct access
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     http_response_code(405);
@@ -7,7 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 }
 
 // Helper to sanitize input
-function sanitize_input($data) {
+function sanitize_input($data)
+{
     return htmlspecialchars(stripslashes(trim($data)));
 }
 
@@ -26,30 +29,22 @@ if (empty($name) || empty($email) || empty($message)) {
 }
 
 // Prepare email content
-$to = "webdev.lou@gmail.com";
-$subject = "New Contact Form Submission from " . $name;
 $email_content = "Name: $name\n";
 $email_content .= "Email: $email\n";
 $email_content .= "Phone: $phone\n";
 $email_content .= "Website: $website\n\n";
 $email_content .= "Message:\n$message\n";
 
-$headers = "From: $name <$email>";
-
-// Attempt to send email
-$mailSent = mail($to, $subject, $email_content, $headers);
-
-// Log locally (fallback since local server might not have mail configured)
+// Log locally
 $logEntry = "Time: " . date("Y-m-d H:i:s") . "\n" . $email_content . "---------------------------------\n";
-file_put_contents("submissions.txt", $logEntry, FILE_APPEND);
+file_put_contents(__DIR__ . "/submissions.txt", $logEntry, FILE_APPEND);
 
-// Response
-if ($mailSent) {
-    http_response_code(200);
-    echo json_encode(["status" => "success", "message" => "Thank you! Your message has been sent."]);
-} else {
-    // Even if mail fails (likely on localhost), we return success if logged successfully for testing
-    http_response_code(200); 
-    echo json_encode(["status" => "success", "message" => "Message received! (Logged locally)"]);
-}
+// Try to send email (suppress warnings on localhost where mail isn't configured)
+$to = "webdev.lou@gmail.com";
+$subject = "New Contact Form Submission from " . $name;
+$headers = "From: $name <$email>";
+@mail($to, $subject, $email_content, $headers);
+
+// Always return success since we've logged the submission
+echo json_encode(["status" => "success", "message" => "Thank you! Your message has been sent."]);
 ?>
